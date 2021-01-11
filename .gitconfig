@@ -1,0 +1,15 @@
+[alias]
+	b = branch
+	d = diff
+[core]
+	editor = nano
+[color]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Billy Cropley
+	email = billycropley@gmail.com
